@@ -8,9 +8,7 @@ export abstract class CardComparator implements IComparator<Card> {
     public abstract compare(one: Card, another: Card): number;
 }
 
-// TODO: 強さを元に比較する比較器を作る
 export class CardPowerComparator extends CardComparator {
-    // TODO compareメソッドを何とかする
     /*
     * 左側が大きい場合に負の数、右側が大きい場合に正の数、等しい場合に0を返す
     */
